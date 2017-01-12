@@ -1,6 +1,6 @@
 const byte IR = A0;
 const byte Light = 7;
-const byte Speaker = 8;
+const byte Speaker = 12;
 int val;
 int Time = 0;
 
