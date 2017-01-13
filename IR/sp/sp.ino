@@ -1,12 +1,12 @@
 const byte IR = A0;
-const byte Light = 7;
-const byte Speaker = 8;
+const byte Light = 8;
+//const byte Speaker = 8;
 int val;
 int Time = 0;
 
 void setup() {
   // put your setup code here, to run once:
-  pinMode( Speaker, OUTPUT );
+  //pinMode( Speaker, OUTPUT );
   pinMode( Light, OUTPUT );
   Serial.begin( 9600 );
 }

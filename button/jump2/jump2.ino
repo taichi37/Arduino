@@ -1,5 +1,5 @@
-byte SW = 2;
-byte Red = 12;
+byte SW = 7;
+byte Red = 8;
 byte Click = 0;
 boolean b1, b2;
 boolean lastStatus = LOW;
