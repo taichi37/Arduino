@@ -7,7 +7,6 @@ SoftwareSerial BT( 3, 2 );
 boolean stateRed = LOW;
 boolean stateGreen = LOW;
 boolean stateBlue = LOW;
-char state[ 3 ] = { 10, 20, 30 };
 
 void setup() {
   // put your setup code here, to run once:
@@ -20,28 +19,6 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   char val = BT.read();
-
-  if( val == 49 )
-  {
-    if( stateRed == LOW )
-      state[ 0 ] = 10;
-    else
-      state[ 0 ] = 11;
-
-    if( stateGreen == LOW )
-      state[ 1 ] = 20;
-    else
-      state[ 1 ] = 21;
-
-    if( stateBlue == LOW )
-      state[ 2 ] = 30;
-    else
-      state[ 2 ] = 31;
-
-    BT.write( state );
-  }
-
-
 
   if( val == 15 )
   {
